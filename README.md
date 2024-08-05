@@ -207,7 +207,3 @@ end
 ```
 
 After which add this `'@fx_progressbar/client.lua'` to the fxmanifest.lua in shared_scripts. Also make sure that the `fx_progressbar` is ensured before `qb-core` in the cfg.
-
-
-**|Download (FREE)|**
-Get this resource at [Tebex ](https://fxscripts.tebex.io/package/6392298) or at [Github ](https://github.com/Fifly1/fxWelcomeUI)
