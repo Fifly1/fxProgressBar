@@ -1,9 +1,11 @@
 ![fxprogressbar_thumbnail](https://github.com/user-attachments/assets/a2185594-d253-4b8a-8767-fb167c364115)
 
 **|Preview|**
+
 Click [here ](https://youtu.be/VxtPegVqBOg)to see a preview
 
 **|Information|**
+
 A progress bar offering a range of customizable features including animations, props, particle effects, and control settings.
 
 **Features included:**
@@ -54,6 +56,7 @@ A progress bar offering a range of customizable features including animations, p
   * `onCancel` (function, **optional**): Callback function if canceled.
 
 **|How to use|**
+
 You just have to trigger this export: `exports['fx_progressbar']:ShowProgressBar()`
 It can be anywhere, in any script.
 
@@ -137,6 +140,7 @@ exports['fx_progressbar']:ShowProgressBar({
 ```
 
 **|Implementing to qb-core|**
+
 If you want to change the default progress bar in the qb-core go to qb-core/client/functions.lua and replace the `QBCore.Functions.Progressbar` function with this:
 
 ```
