@@ -1,4 +1,4 @@
-![fx_progressbar_thumbnail|690x388](upload://zaqVoq797rbZim8cDYE5ss9tI3Q.jpeg)
+![fxprogressbar_thumbnail](https://github.com/user-attachments/assets/a2185594-d253-4b8a-8767-fb167c364115)
 
 **|Preview|**
 Click [here ](https://youtu.be/VxtPegVqBOg)to see a preview
