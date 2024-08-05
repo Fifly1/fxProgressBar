@@ -1,0 +1,61 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bahnschrift Condensed';
+}
+
+#progress-bar {
+    position: absolute;
+    bottom: 4vh;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -1vh;
+    width: 100%;
+}
+
+#label {
+    text-align: left;
+    margin-left: 0.1vh;
+    font-size: 2vh;
+}
+
+#percentage {
+    text-align: right;
+    margin-right: 0.1vh;
+    font-size: 2vh;
+}
+
+.progress-container {
+    display: flex;
+    gap: 0.25vh;
+    justify-content: center;
+    background: rgba(30, 30, 30, 0.8);
+    padding: 1vh;
+    border-radius: 1vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.progress-box {
+    width: 2vh;
+    height: 2vh;
+    background-color: rgba(255, 255, 255, 0.25);
+    clip-path: polygon(0.75vh 0, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 0.75vh);
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 0.5vh;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.filled {
+    background: linear-gradient(135deg, #6c25be, #ae85cc);
+    transform: scale(1.1);
+}
