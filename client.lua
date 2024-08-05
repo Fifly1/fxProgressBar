@@ -29,7 +29,7 @@ end
 function ShowProgressBar(data, callback)
 
     if progressActive then
-        CancelProgress()
+        FinishProgress(true, callback)
     end
 
     progressData = data
@@ -121,32 +121,6 @@ function ShowProgressBar(data, callback)
     end
 end
 
-function CancelProgress()
-    if not progressActive then return end
-
-    progressActive = false
-    SendNUIMessage({
-        action = "hide"
-    })
-
-    ClearPedTasks(PlayerPedId())
-
-    for _, prop in ipairs(props) do
-        DeleteObject(prop)
-    end
-    props = {}
-
-    for _, particle in ipairs(particles) do
-        StopParticleFxLooped(particle, false)
-    end
-    particles = {}
-
-
-    if progressData.onCancel then
-        progressData.onCancel()
-    end
-end
-
 function FinishProgress(cancelled, callback)
     if not progressActive then return end
 
@@ -186,9 +160,8 @@ function IsProgressActive()
 end
 
 exports("ShowProgressBar", ShowProgressBar)
-exports("CancelProgress", CancelProgress)
 exports("IsProgressActive", IsProgressActive)
 
 RegisterNUICallback("cancel", function()
-    CancelProgress()
+    FinishProgress(true, callback)
 end)
